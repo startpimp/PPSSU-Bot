@@ -1,0 +1,3 @@
+{
+	"command.interface.ping.result": "响应时间为$[NUMBER]毫秒。"
+}

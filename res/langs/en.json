@@ -1,0 +1,3 @@
+{
+	"command.interface.ping.result": "The response time were about $[NUMBER] ${NUMBER}(pl=milliseconds|sg=millisecond)."
+}

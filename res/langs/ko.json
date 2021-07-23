@@ -1,0 +1,3 @@
+{
+	"command.interface.ping.result": "응답시간은 $[NUMBER] 미리 초를 였습니다."
+}

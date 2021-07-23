@@ -1,0 +1,9 @@
+{
+	"command.interface.ping.result": "Le temps de réponse à été de $[NUMBER] ${NUMBER}(pl=millisecondes|sg=milliseconde).",
+
+
+	"command.interface.help.embed.title": "Liste des commandes",
+	"command.interface.help.embed.description": "Cette liste vous donne toutes les commandes rangées par catégorie.\nFaites la commande `$[PREFIX]help` suivit du nom de la commande pour avoir un affichage plus détaillée de son utilisation (exemple : `$[PREFIX]help ping`).",
+	"var.MODERATION": "modération?sgfn",
+	"var.MANAGEMENT": "géstion?sgfn"
+}
