@@ -6,7 +6,7 @@
 			"path": "./res/db/users.data",
 			"args": [
 				"language",
-				"type"
+				"type" 
 			]
 		},
 		"guilds": {
