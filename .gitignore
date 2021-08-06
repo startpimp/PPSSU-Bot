@@ -1,1 +1,8 @@
 res/config.json filter=noToken
+.idea/
+target/
+.settings/
+.classpath
+.project
+*.iml
+res/db/*.data
