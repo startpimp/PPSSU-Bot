@@ -1,0 +1,10 @@
+.idea/
+.settings/
+*.project
+*.iml
+*.classpath
+*.gitattributes
+res/jars/
+res/db/*.data
+res/config.json
+target/
