@@ -64,28 +64,6 @@ public class Sender
 
 	public static String generateBVC(final String content, final String id, final boolean modified)
 	{
-		BigInteger numberedContent = new BigInteger("0");
-
-		for (int i = 0; i < content.length(); i++)
-		{
-			numberedContent = numberedContent.add(new BigInteger(String.valueOf((int) content.charAt(i))));
-		}
-
-		BigInteger			numberedBVC		= new BigInteger("0");
-		final BigInteger	CONTENT_LENGTH	= new BigInteger(String.valueOf(content.length()));
-		final BigInteger	USER_ID			= new BigInteger(id);
-		final BigInteger	MODIFIER		= new BigInteger(modified ? "1" : "0");
-
-		numberedBVC = numberedBVC.add(CONTENT_LENGTH.multiply(numberedContent)).add(USER_ID).add(MODIFIER);
-
-		final StringBuilder	BUILDER		= new StringBuilder();
-		final String		DECIMAL_BVC	= numberedBVC.toString();
-
-		for (int i = 1; i < DECIMAL_BVC.length(); i += 2)
-		{
-			BUILDER.append((char) (Integer.parseInt(String.valueOf(DECIMAL_BVC.charAt(i - 1))) * 10 + Integer.parseInt(String.valueOf(DECIMAL_BVC.charAt(i)))));
-		}
-
-		return Base64.getEncoder().encodeToString(BUILDER.toString().getBytes());
+		// invisible lines
 	}
 }
