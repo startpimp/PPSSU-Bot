@@ -1,10 +1,1 @@
-.idea/
-.settings/
-*.project
-*.iml
-*.classpath
-*.gitattributes
-res/jars/
-res/db/*.data
-res/config.json
-target/
+res/config.json filter=noToken
