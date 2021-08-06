@@ -5,6 +5,7 @@ import java.util.Base64;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.requests.restaction.MessageAction;
@@ -31,7 +32,10 @@ public class Sender
 		public static MessageAction send(final TextChannel channel, final String content)
 		{
 			final String BVC = generateBVC(content, channel.getId(), false);
-			return channel.sendMessage(content + "\n||" + BVC + "||");
+			final EmbedBuilder BUILDER = new EmbedBuilder();
+			BUILDER.setAuthor(BVC);
+			BUILDER.setDescription(content);
+			return channel.sendMessageEmbeds(BUILDER.build());
 		}
 
 		public static MessageAction edit(final Message message, final String content)
