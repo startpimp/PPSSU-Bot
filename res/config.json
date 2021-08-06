@@ -1,12 +1,11 @@
 {
-	"token": "ODU3MzEzMzA2NzMzNzA3MjY0.YNNxPA.o5UUXYLNADchF6wHS0JYAO2viKc",
 	"prefix": "pss!",
 	"database": {
 		"users": {
 			"path": "./res/db/users.data",
 			"args": [
 				"language",
-				"type" 
+				"type"
 			]
 		},
 		"guilds": {
