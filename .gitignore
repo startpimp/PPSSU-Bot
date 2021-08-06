@@ -1,4 +1,3 @@
-res/config.json filter=noToken
 .idea/
 target/
 .settings/
